@@ -13,7 +13,7 @@ int main() {
 	cin >> jmlh;
 	item benda[jmlh];
 	
-	for (int i=0; i<5; i++) {
+	for (int i=0; i<jmlh; i++) {
 	cout << "Nama: " ;
 	cin >> benda[i].nama;
 	cout << "Harga: ";
