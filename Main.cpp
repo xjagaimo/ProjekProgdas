@@ -6,40 +6,24 @@ class item {
 	string nama;
 	int harga;
 };
-
-item benda[3];
-
-void display() {
-	for (int i=0; i<3; i++) { // display
-	cout << benda[i].nama << endl;
-	cout << benda[i].harga << endl; 
-	}
-}
 	
 int main() {
+	int jmlh;
+	cout << "Jumlah item yang diinginkan?";
+	cin >> jmlh;
+	item benda[jmlh];
 	
-	bool edit = 0;
-	int a;
-	
-	for (int i=0; i<3; i++) { //add item
+	for (int i=0; i<=jmlh; i++) {
 	cout << "Nama: " ;
 	cin >> benda[i].nama;
 	cout << "Harga: ";
 	cin >> benda[i].harga; 
 	}
-	display();
-		
-	cout << "mau ngedit gan? [true/false]";	// edit
-	cin >> edit;
-	if (edit) {
-	cout << "barang ke berapa gan?";
-	cin >> a;
-	cout << "Barang ke"<<a<<endl;
-	cout << "Nama: " ;
-	cin >> benda[a].nama;
-	cout << "Harga: ";
-	cin >> benda[a].harga;
-	display(); 
-	}
+	
+	for (int i=0; i<5; i++) {
+	
+	cout << benda[i].nama << endl;
+	cout << benda[i].harga << endl; }
+	
 return 0; 
 }
