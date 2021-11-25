@@ -8,7 +8,10 @@ class item {
 };
 	
 int main() {
-	item benda[5];
+	int jmlh;
+	cout << "Jumlah item yang diinginkan?";
+	cin >> jmlh;
+	item benda[jmlh];
 	
 	for (int i=0; i<5; i++) {
 	cout << "Nama: " ;
